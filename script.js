@@ -246,8 +246,179 @@ console.log(currentColor);
 // console.log(b);
 
 
+/*
+//Hour
+//If hour is between 6am and 12pm: Good Morning!
+//If it is between 12pm and 6pm: Good afternoon!
+//Otherwise: good evening!
 
 
+// My way 
+
+let hour = 20;
+
+if (hour >= 6 && hour < 12) {
+console.log('Good Morning!');
+} else if (hour >= 12 && hour < 18) {
+    console.log('Good afternoon!');
+} else {
+    console.log('Good Evening!');
+};
+
+//Turns out my way is the same way as the istructors way...Nice
+*/
+
+/*
+// Switch and Case
+
+let role = 'guest';
+
+switch (role) {
+    case 'guest':
+    console.log('Guest User');
+    break;
+
+    case 'moderator':
+    console.log('Moderator User');
+    break;
+
+    default:
+        console.log('Unknown User');
+}
+
+// Doing the same but whith an if else statement (cleaner and shorter)
+
+if (role === 'guest') {
+    console.log('Guest user');
+} else if (role === 'moderator') {
+    console.log('Moderator User');
+    } else {
+        console.log('Unknown User');
+    }
+
+*/
+
+// Loops (for loop)
+
+// i = index
+
+// // Explaining for i loop
+// // for (initalExpression; condition; incrementExpression) {
+//     console.log('Hello world');
+// }
+
+
+// for (let i = 0; i < 5; i++) {
+//     console.log('Hello world', i);
+// }
+
+// Loops (while loop) - difference here is that instead declaring the variable inside the loop we do it externaly
+
+// let i = 0;
+// while (i <= 5) {
+//     console.log(i);
+//     i++;
+// }
+
+// Do-while loop - difference here is that the condition is evaluated at the end and not like while loop in the benigininng
+
+// let i = 0;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i <= 5);
+
+// For-in loop, we use it to itterate over the properties of an object, Example:
+
+// Object
+// let person = {
+//     name: 'Qamil',
+//     age: 26
+// }
+
+// // For-in loop
+// for (let key in person)
+//     console.log(key, person[key]);
+
+
+
+// For - of loop, itterating over arrays.
+
+// Array
+// let colors = ['red', 'green', 'blue'];
+
+// For-of loop
+// for (let color of colors)
+// console.log(colors);
+
+
+// Write a function that takes two numbers and returns the maximu of the two
+
+
+// let number = max(1,5);
+// console.log(number);
+
+// function max (a, b) {
+    
+//     // if (a > b) 
+//     // return a;
+//     // return b
+    
+//     return (a > b) ? a : b;
+
+//     }
+
+// Challenge
+// it takes two parameters, width and heigth to return if the image is landscape or portrait
+
+// let result = isLandscape(1920, 1080);
+// console.log(result); 
+
+// function isLandscape (width, heigth) {
+//     // if (width > heigth) return true;
+//     // else return false;
+
+//     return (width > heigth);
+
+
+// Challenge
+// FizzBuzz Challenge
+// My Way of solving the challenge
+
+// let output = fizzBuzz(15);
+// console.log(output);
+
+// function fizzBuzz(input) {
+//     if ((input % 3 === 0) && (input % 5 === 0)) {
+//         return 'FizzBuzz';}
+//     if (input % 3 === 0) {
+//         return 'Fizz'
+//     }if (input % 5 === 0) {
+//         return 'Buzz'
+//     }else return input;
+// }
+
+// Instructors way of solving the challenge
+// let output = fizzBuzz(5);
+// console.log(output);
+
+// function fizzBuzz (input) {
+//     if (typeof input !== 'number')
+//     return 'Not a number'
+
+//     if ((input % 3 === 0) && (input % 5 === 0)) {
+//         return 'FizzBuzz';}
+    
+//     if (input % 3 === 0) 
+//         return 'Fizz'
+    
+//     if (input % 5 === 0) 
+//         return 'Buzz'
+//     else return input;
+
+// }
+
+// done for today.
 
 
 
