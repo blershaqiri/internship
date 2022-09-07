@@ -421,4 +421,146 @@ if (role === 'guest') {
 // done for today.
 
 
+// Speed limit challenge
 
+// Speed limit 70
+// For every over 5kmh you get 1 point
+// Use math.floor to round up the points
+// if you get 12 points licence gets suspended
+
+
+
+// function checkSpeed (speed) {
+    
+//     const speedLimit = 70;
+//     const kmPerPoint = 5;
+
+//     if(speed < speedLimit + kmPerPoint) {
+//         console.log("ok");
+//     } else {
+//         // const points = Math.floor((speed - speedLimit) / kmPerPoint);
+//         // points <= 12 ? console.log("Suspended") : console.log("Points ", points);
+//         let points = Math.floor((speed - speedLimit) / kmPerPoint)
+//         if(points >= 12) {
+//             console.log("License Suspended");
+//         } else {
+//             console.log("Points", points);
+//         }
+//     }
+
+// }
+
+// checkSpeed(180)
+
+
+
+
+// function showNumbers (limit) {
+//     for (let i = 0; i <= limit; ++i){
+//         console.log(i, i % 2 == 0 ? 'EVEN' : 'ODD');
+//     }
+// }
+
+// showNumbers(10);
+
+
+    // let i = 0;
+    // while (i < 10) {
+    //     console.log(i + 1, ++i % 2 == 0 ? 'EVEN' : 'ODD');
+    //     // i++;
+    // }
+
+
+// Count Truthy values
+// function countTruthy (array) {
+//     return array.filter(Boolean).length;
+// }
+
+// let array = [0, null, undefined, '', 2, 3, 4]
+// console.log(countTruthy(array));
+
+// Spring properties
+
+// let movie = {
+//     title:'a',
+//     releaseYear:2018,
+//     rating:4.2,
+//     director:'b',
+//     mic:'c'
+// }
+
+// showProperties(movie);
+
+// function showProperties(obj){
+//     for(let i in obj)
+//         if (typeof obj[i] === 'string')
+//             console.log(i, obj[i]);
+// }
+
+// Sum of multiples 3 and 5
+
+// function sum(limit) {
+//     let sum = 0;
+        
+//     for (let i = 0; i <= limit; i++)
+//             if (i % 3 === 0 || i % 5 === 0)
+//                 sum += i;
+//                 return sum;
+// }
+
+// console.log(sum(20));
+
+
+
+// Calculate grade of students, through an average number
+
+// const array = [90, 75, 40]; 
+
+// function calculateGrade(marks) {
+//   const average = calculateAverage(marks);
+//   if (average < 60) return 'F';
+//   if (average < 70) return 'D'; 
+//   if (average < 80) return 'C'; 
+//   if (average < 90) return 'B'; 
+//   return 'A'; 
+// }
+
+// function calculateAverage(array) {
+//   let sum = 0; 
+//   for (let value of array)
+//     sum += value;
+//   return sum / array.length;
+// }
+
+// console.log(calculateGrade(array));
+
+// The star challenge
+
+// function showStars(rows) {
+//   for (let row = 1; row <= rows; row++) {
+//     let pattern = '';
+//     for (let i = 0; i < row; i++)
+//       pattern += '*'; 
+//     console.log(pattern);
+//   }
+// } 
+
+// showStars(5);
+
+
+// Prime Numbers Challenge
+
+// function showPrimes(limit) {
+//   for (let number = 2; number <= limit; number++) 
+//     if (isPrime(number)) console.log(number); 
+// }
+
+// function isPrime(number) {
+//   for (let factor = 2; factor < number; factor++) 
+//     if (number % factor === 0) 
+//       return false; 
+  
+//   return true; 
+// }
+
+// showPrimes(50);
